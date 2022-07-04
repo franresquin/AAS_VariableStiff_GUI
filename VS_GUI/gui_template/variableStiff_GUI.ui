@@ -1,0 +1,5517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>2280</width>
+    <height>1467</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="contextMenuPolicy">
+   <enum>Qt::NoContextMenu</enum>
+  </property>
+  <property name="windowTitle">
+   <string>Variable Stiffness</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="sizeConstraint">
+     <enum>QLayout::SetMinimumSize</enum>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tabs">
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>80</width>
+        <height>60</height>
+       </size>
+      </property>
+      <property name="documentMode">
+       <bool>false</bool>
+      </property>
+      <property name="tabsClosable">
+       <bool>false</bool>
+      </property>
+      <property name="movable">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="tab_customize">
+       <attribute name="title">
+        <string>Actionable</string>
+       </attribute>
+       <widget class="QLabel" name="tact_Socketimage">
+        <property name="geometry">
+         <rect>
+          <x>610</x>
+          <y>50</y>
+          <width>611</width>
+          <height>621</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../pictures/SocketScketch.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="tact_pButton_serialStatus">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>30</y>
+          <width>271</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-style:outset;
+border-width:2px;
+border-color:black;
+font:bold;
+border-radius:10px</string>
+        </property>
+        <property name="text">
+         <string>Control Unit</string>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>1590</x>
+          <y>160</y>
+          <width>271</width>
+          <height>231</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QPushButton" name="tact_pButton_AllStiff">
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>All Stiffs</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="tact_pButton_AllFlexible">
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <property name="text">
+            <string>All Flexibles</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QPushButton" name="tact_pButton_posStiff">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>270</y>
+          <width>187</width>
+          <height>57</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Stiff</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="tact_pButton_posFexible">
+        <property name="geometry">
+         <rect>
+          <x>360</x>
+          <y>340</y>
+          <width>187</width>
+          <height>57</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Flexible</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="tact_pButton_antFexible">
+        <property name="geometry">
+         <rect>
+          <x>1190</x>
+          <y>120</y>
+          <width>187</width>
+          <height>57</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Flexible</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="tact_pButton_antStiff">
+        <property name="geometry">
+         <rect>
+          <x>1190</x>
+          <y>50</y>
+          <width>187</width>
+          <height>57</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Stiff</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="tact_pButton_medStiff">
+        <property name="geometry">
+         <rect>
+          <x>1290</x>
+          <y>270</y>
+          <width>187</width>
+          <height>57</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Stiff</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="tact_pButton_medFexible">
+        <property name="geometry">
+         <rect>
+          <x>1290</x>
+          <y>340</y>
+          <width>187</width>
+          <height>57</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Flexible</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="tact_pButton_ramStiff">
+        <property name="geometry">
+         <rect>
+          <x>820</x>
+          <y>480</y>
+          <width>187</width>
+          <height>57</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Stiff</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="tact_pButton_ramFexible">
+        <property name="geometry">
+         <rect>
+          <x>820</x>
+          <y>550</y>
+          <width>187</width>
+          <height>57</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Flexible</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="tact_lbl_posterior">
+        <property name="geometry">
+         <rect>
+          <x>580</x>
+          <y>340</y>
+          <width>181</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-style:outset;
+border-width:1px;
+border-color:black;
+border-radius:10px
+</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="midLineWidth">
+         <number>1</number>
+        </property>
+        <property name="text">
+         <string>N/A</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="margin">
+         <number>0</number>
+        </property>
+       </widget>
+       <widget class="QLabel" name="tact_lbl_ramus">
+        <property name="geometry">
+         <rect>
+          <x>820</x>
+          <y>400</y>
+          <width>181</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-style:outset;
+border-width:1px;
+border-color:black;
+border-radius:10px</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="midLineWidth">
+         <number>1</number>
+        </property>
+        <property name="text">
+         <string>N/A</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="tact_lbl_medial">
+        <property name="geometry">
+         <rect>
+          <x>1070</x>
+          <y>330</y>
+          <width>181</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-style:outset;
+border-width:1px;
+border-color:black;
+border-radius:10px</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="midLineWidth">
+         <number>1</number>
+        </property>
+        <property name="text">
+         <string>N/A</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QLabel" name="tact_lbl_anterior">
+        <property name="geometry">
+         <rect>
+          <x>970</x>
+          <y>50</y>
+          <width>181</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-style:outset;
+border-width:1px;
+border-color:black;
+border-radius:10px</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Box</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Plain</enum>
+        </property>
+        <property name="lineWidth">
+         <number>1</number>
+        </property>
+        <property name="midLineWidth">
+         <number>1</number>
+        </property>
+        <property name="text">
+         <string>N/A</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+       <widget class="QGroupBox" name="groupBox">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>720</y>
+          <width>2001</width>
+          <height>521</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>User Data</string>
+        </property>
+        <widget class="QPushButton" name="tact_pButton_ld_walkingslow">
+         <property name="geometry">
+          <rect>
+           <x>660</x>
+           <y>190</y>
+           <width>151</width>
+           <height>57</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-style:outset;
+border-width:1px;
+border-color:black;
+border-radius:10px</string>
+         </property>
+         <property name="text">
+          <string>Load</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../pictures/load_Icon.png</normaloff>../pictures/load_Icon.png</iconset>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="tact_pButton_ld_walkinguneven">
+         <property name="geometry">
+          <rect>
+           <x>980</x>
+           <y>190</y>
+           <width>151</width>
+           <height>57</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-style:outset;
+border-width:1px;
+border-color:black;
+border-radius:10px</string>
+         </property>
+         <property name="text">
+          <string>Load</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../pictures/load_Icon.png</normaloff>../pictures/load_Icon.png</iconset>
+         </property>
+        </widget>
+        <widget class="Line" name="line_34">
+         <property name="geometry">
+          <rect>
+           <x>800</x>
+           <y>190</y>
+           <width>31</width>
+           <height>291</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="tact_pButton_sv_walkinguneven">
+         <property name="geometry">
+          <rect>
+           <x>980</x>
+           <y>420</y>
+           <width>151</width>
+           <height>57</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-style:outset;
+border-width:1px;
+border-color:black;
+border-radius:10px</string>
+         </property>
+         <property name="text">
+          <string>Save</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../pictures/save1_icon.png</normaloff>../pictures/save1_icon.png</iconset>
+         </property>
+        </widget>
+        <widget class="Line" name="line_40">
+         <property name="geometry">
+          <rect>
+           <x>640</x>
+           <y>190</y>
+           <width>31</width>
+           <height>291</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="tact_pButton_sv_sitting">
+         <property name="geometry">
+          <rect>
+           <x>340</x>
+           <y>420</y>
+           <width>151</width>
+           <height>57</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-style:outset;
+border-width:1px;
+border-color:black;
+border-radius:10px</string>
+         </property>
+         <property name="text">
+          <string>Save</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../pictures/save1_icon.png</normaloff>../pictures/save1_icon.png</iconset>
+         </property>
+        </widget>
+        <widget class="QLabel" name="tact_lab_ascendingramp">
+         <property name="geometry">
+          <rect>
+           <x>1320</x>
+           <y>260</y>
+           <width>121</width>
+           <height>141</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>../pictures/AscendingRamp_Icon.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="tact_pButton_sv_standing">
+         <property name="geometry">
+          <rect>
+           <x>500</x>
+           <y>420</y>
+           <width>151</width>
+           <height>57</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-style:outset;
+border-width:1px;
+border-color:black;
+border-radius:10px</string>
+         </property>
+         <property name="text">
+          <string>Save</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../pictures/save1_icon.png</normaloff>../pictures/save1_icon.png</iconset>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="tact_pButton_ld_sitting">
+         <property name="geometry">
+          <rect>
+           <x>340</x>
+           <y>190</y>
+           <width>151</width>
+           <height>57</height>
+          </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-style:outset;
+border-width:1px;
+border-color:black;
+border-radius:10px</string>
+         </property>
+         <property name="text">
+          <string>Load</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../pictures/load_Icon.png</normaloff>../pictures/load_Icon.png</iconset>
+         </property>
+        </widget>
+        <widget class="QLabel" name="tact_lab_walkingslow">
+         <property name="geometry">
+          <rect>
+           <x>690</x>
+           <y>260</y>
+           <width>91</width>
+           <height>141</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>../pictures/WalkingSlow_Icon.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="tact_pButton_ld_standing">
+         <property name="geometry">
+          <rect>
+           <x>500</x>
+           <y>190</y>
+           <width>151</width>
+           <height>57</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-style:outset;
+border-width:1px;
+border-color:black;
+border-radius:10px</string>
+         </property>
+         <property name="text">
+          <string>Load</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../pictures/load_Icon.png</normaloff>../pictures/load_Icon.png</iconset>
+         </property>
+        </widget>
+        <widget class="Line" name="line_36">
+         <property name="geometry">
+          <rect>
+           <x>960</x>
+           <y>190</y>
+           <width>31</width>
+           <height>291</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="tact_pButton_sv_descendingstair">
+         <property name="geometry">
+          <rect>
+           <x>1780</x>
+           <y>420</y>
+           <width>151</width>
+           <height>57</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-style:outset;
+border-width:1px;
+border-color:black;
+border-radius:10px</string>
+         </property>
+         <property name="text">
+          <string>Save</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../pictures/save1_icon.png</normaloff>../pictures/save1_icon.png</iconset>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="tact_pButton_sv_walkingcircle">
+         <property name="geometry">
+          <rect>
+           <x>1140</x>
+           <y>420</y>
+           <width>151</width>
+           <height>57</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-style:outset;
+border-width:1px;
+border-color:black;
+border-radius:10px</string>
+         </property>
+         <property name="text">
+          <string>Save</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../pictures/save1_icon.png</normaloff>../pictures/save1_icon.png</iconset>
+         </property>
+        </widget>
+        <widget class="Line" name="line_38">
+         <property name="geometry">
+          <rect>
+           <x>1120</x>
+           <y>190</y>
+           <width>31</width>
+           <height>291</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+        <widget class="Line" name="line_42">
+         <property name="geometry">
+          <rect>
+           <x>1760</x>
+           <y>190</y>
+           <width>31</width>
+           <height>291</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="tact_pButton_sv_ascendingramp">
+         <property name="geometry">
+          <rect>
+           <x>1300</x>
+           <y>420</y>
+           <width>151</width>
+           <height>57</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-style:outset;
+border-width:1px;
+border-color:black;
+border-radius:10px</string>
+         </property>
+         <property name="text">
+          <string>Save</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../pictures/save1_icon.png</normaloff>../pictures/save1_icon.png</iconset>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="tact_pButton_sv_ascendingstair">
+         <property name="geometry">
+          <rect>
+           <x>1620</x>
+           <y>420</y>
+           <width>151</width>
+           <height>57</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-style:outset;
+border-width:1px;
+border-color:black;
+border-radius:10px</string>
+         </property>
+         <property name="text">
+          <string>Save</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../pictures/save1_icon.png</normaloff>../pictures/save1_icon.png</iconset>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="tact_pButton_sv_descendingramp">
+         <property name="geometry">
+          <rect>
+           <x>1460</x>
+           <y>420</y>
+           <width>151</width>
+           <height>57</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-style:outset;
+border-width:1px;
+border-color:black;
+border-radius:10px</string>
+         </property>
+         <property name="text">
+          <string>Save</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../pictures/save1_icon.png</normaloff>../pictures/save1_icon.png</iconset>
+         </property>
+        </widget>
+        <widget class="QLabel" name="tact_lab_ascendingstair">
+         <property name="geometry">
+          <rect>
+           <x>1640</x>
+           <y>270</y>
+           <width>121</width>
+           <height>141</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>../pictures/AscendingStair_Icon.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="tact_pButton_read">
+         <property name="geometry">
+          <rect>
+           <x>110</x>
+           <y>80</y>
+           <width>261</width>
+           <height>71</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>10</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-style:outset;
+border-width:2px;
+border-color:black;
+border-radius:10px</string>
+         </property>
+         <property name="text">
+          <string>Read DataBase</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="tact_lab_descendingstair">
+         <property name="geometry">
+          <rect>
+           <x>1800</x>
+           <y>260</y>
+           <width>121</width>
+           <height>141</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>../pictures/DescendingStair_Icon.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="tact_pButton_ld_ascendingstair">
+         <property name="geometry">
+          <rect>
+           <x>1620</x>
+           <y>190</y>
+           <width>151</width>
+           <height>57</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-style:outset;
+border-width:1px;
+border-color:black;
+border-radius:10px</string>
+         </property>
+         <property name="text">
+          <string>Load</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../pictures/load_Icon.png</normaloff>../pictures/load_Icon.png</iconset>
+         </property>
+        </widget>
+        <widget class="Line" name="line_43">
+         <property name="geometry">
+          <rect>
+           <x>310</x>
+           <y>190</y>
+           <width>31</width>
+           <height>291</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="tact_pButton_ld_descendingramp">
+         <property name="geometry">
+          <rect>
+           <x>1460</x>
+           <y>190</y>
+           <width>151</width>
+           <height>57</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-style:outset;
+border-width:1px;
+border-color:black;
+border-radius:10px</string>
+         </property>
+         <property name="text">
+          <string>Load</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../pictures/load_Icon.png</normaloff>../pictures/load_Icon.png</iconset>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="tact_pButton_ld_descendingstair">
+         <property name="geometry">
+          <rect>
+           <x>1780</x>
+           <y>190</y>
+           <width>151</width>
+           <height>57</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-style:outset;
+border-width:1px;
+border-color:black;
+border-radius:10px</string>
+         </property>
+         <property name="text">
+          <string>Load</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../pictures/load_Icon.png</normaloff>../pictures/load_Icon.png</iconset>
+         </property>
+        </widget>
+        <widget class="Line" name="line_39">
+         <property name="geometry">
+          <rect>
+           <x>1280</x>
+           <y>190</y>
+           <width>31</width>
+           <height>291</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+        <widget class="QLabel" name="tact_lab_descendingramp">
+         <property name="geometry">
+          <rect>
+           <x>1480</x>
+           <y>260</y>
+           <width>121</width>
+           <height>141</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>../pictures/DescendingRamp_Icon.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="tact_cBox_Users">
+         <property name="geometry">
+          <rect>
+           <x>400</x>
+           <y>80</y>
+           <width>501</width>
+           <height>61</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <item>
+          <property name="text">
+           <string>Select User</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string/>
+          </property>
+         </item>
+        </widget>
+        <widget class="QLabel" name="tact_lab_walkinguneven">
+         <property name="geometry">
+          <rect>
+           <x>1000</x>
+           <y>260</y>
+           <width>121</width>
+           <height>141</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>../pictures/WalkingUneven_Icon.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="tact_lEdit_name">
+         <property name="geometry">
+          <rect>
+           <x>1070</x>
+           <y>80</y>
+           <width>861</width>
+           <height>61</height>
+          </rect>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="tact_pButton_sv_walkingslow">
+         <property name="geometry">
+          <rect>
+           <x>660</x>
+           <y>420</y>
+           <width>151</width>
+           <height>57</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-style:outset;
+border-width:1px;
+border-color:black;
+border-radius:10px</string>
+         </property>
+         <property name="text">
+          <string>Save</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../pictures/save1_icon.png</normaloff>../pictures/save1_icon.png</iconset>
+         </property>
+        </widget>
+        <widget class="QLabel" name="tact_label_name">
+         <property name="geometry">
+          <rect>
+           <x>950</x>
+           <y>80</y>
+           <width>121</width>
+           <height>61</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Name</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="tact_lab_standing">
+         <property name="geometry">
+          <rect>
+           <x>550</x>
+           <y>260</y>
+           <width>61</width>
+           <height>141</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>../pictures/Standing_Icon.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QLabel" name="tact_lab_walkingfast">
+         <property name="geometry">
+          <rect>
+           <x>830</x>
+           <y>260</y>
+           <width>121</width>
+           <height>141</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>../pictures/WalkingFast_icon.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="Line" name="line_41">
+         <property name="geometry">
+          <rect>
+           <x>1600</x>
+           <y>190</y>
+           <width>31</width>
+           <height>291</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+        <widget class="Line" name="line_35">
+         <property name="geometry">
+          <rect>
+           <x>480</x>
+           <y>190</y>
+           <width>31</width>
+           <height>291</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="tact_pButton_ld_walkingfast">
+         <property name="geometry">
+          <rect>
+           <x>820</x>
+           <y>190</y>
+           <width>151</width>
+           <height>57</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-style:outset;
+border-width:1px;
+border-color:black;
+border-radius:10px</string>
+         </property>
+         <property name="text">
+          <string>Load</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../pictures/load_Icon.png</normaloff>../pictures/load_Icon.png</iconset>
+         </property>
+        </widget>
+        <widget class="QLabel" name="tact_lab_walkingcircle">
+         <property name="geometry">
+          <rect>
+           <x>1160</x>
+           <y>260</y>
+           <width>121</width>
+           <height>141</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>../pictures/WalkingCircles_Icon.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="tact_pButton_sv_walkingfast">
+         <property name="geometry">
+          <rect>
+           <x>820</x>
+           <y>420</y>
+           <width>151</width>
+           <height>57</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-style:outset;
+border-width:1px;
+border-color:black;
+border-radius:10px</string>
+         </property>
+         <property name="text">
+          <string>Save</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../pictures/save1_icon.png</normaloff>../pictures/save1_icon.png</iconset>
+         </property>
+        </widget>
+        <widget class="QLabel" name="tact_lab_sitting">
+         <property name="geometry">
+          <rect>
+           <x>380</x>
+           <y>260</y>
+           <width>91</width>
+           <height>141</height>
+          </rect>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+         <property name="lineWidth">
+          <number>1</number>
+         </property>
+         <property name="midLineWidth">
+          <number>1</number>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="pixmap">
+          <pixmap>../pictures/sitting_Icom.png</pixmap>
+         </property>
+         <property name="scaledContents">
+          <bool>true</bool>
+         </property>
+        </widget>
+        <widget class="Line" name="line_37">
+         <property name="geometry">
+          <rect>
+           <x>1440</x>
+           <y>190</y>
+           <width>31</width>
+           <height>291</height>
+          </rect>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="tact_pButton_ld_ascendingramp">
+         <property name="geometry">
+          <rect>
+           <x>1300</x>
+           <y>190</y>
+           <width>151</width>
+           <height>57</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-style:outset;
+border-width:1px;
+border-color:black;
+border-radius:10px</string>
+         </property>
+         <property name="text">
+          <string>Load</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../pictures/load_Icon.png</normaloff>../pictures/load_Icon.png</iconset>
+         </property>
+        </widget>
+        <widget class="QPushButton" name="tact_pButton_ld_walkingcircle">
+         <property name="geometry">
+          <rect>
+           <x>1140</x>
+           <y>190</y>
+           <width>151</width>
+           <height>57</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>8</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-style:outset;
+border-width:1px;
+border-color:black;
+border-radius:10px</string>
+         </property>
+         <property name="text">
+          <string>Load</string>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../pictures/load_Icon.png</normaloff>../pictures/load_Icon.png</iconset>
+         </property>
+        </widget>
+        <widget class="QWidget" name="layoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>90</x>
+           <y>240</y>
+           <width>201</width>
+           <height>191</height>
+          </rect>
+         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QCheckBox" name="tact_cbox_mode1">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::RightToLeft</enum>
+            </property>
+            <property name="autoFillBackground">
+             <bool>false</bool>
+            </property>
+            <property name="text">
+             <string>Mode 1</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="tact_cbox_mode2">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::RightToLeft</enum>
+            </property>
+            <property name="text">
+             <string>Mode 2</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QCheckBox" name="tact_cbox_mode3">
+            <property name="font">
+             <font>
+              <pointsize>10</pointsize>
+             </font>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::RightToLeft</enum>
+            </property>
+            <property name="text">
+             <string>Mode 3</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <zorder>groupBox</zorder>
+       <zorder>tact_Socketimage</zorder>
+       <zorder>tact_pButton_serialStatus</zorder>
+       <zorder>layoutWidget</zorder>
+       <zorder>tact_pButton_posStiff</zorder>
+       <zorder>tact_pButton_posFexible</zorder>
+       <zorder>tact_pButton_antFexible</zorder>
+       <zorder>tact_pButton_antStiff</zorder>
+       <zorder>tact_pButton_medStiff</zorder>
+       <zorder>tact_pButton_medFexible</zorder>
+       <zorder>tact_pButton_ramStiff</zorder>
+       <zorder>tact_pButton_ramFexible</zorder>
+       <zorder>tact_lbl_posterior</zorder>
+       <zorder>tact_lbl_ramus</zorder>
+       <zorder>tact_lbl_medial</zorder>
+       <zorder>tact_lbl_anterior</zorder>
+      </widget>
+      <widget class="QWidget" name="tab_Automate">
+       <attribute name="title">
+        <string>Automate</string>
+       </attribute>
+       <widget class="QPushButton" name="taut_pButton_controlStatus">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>70</y>
+          <width>211</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-style:outset;
+border-width:2px;
+border-color:black;
+font:bold;
+border-radius:10px</string>
+        </property>
+        <property name="text">
+         <string>Control Unit</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="taut_pButton_dataStatus">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>180</y>
+          <width>211</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <weight>75</weight>
+          <italic>false</italic>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-style:outset;
+border-width:2px;
+border-color:black;
+font:bold;
+border-radius:10px</string>
+        </property>
+        <property name="text">
+         <string>Data Unit</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="taut_cBox_Users">
+        <property name="geometry">
+         <rect>
+          <x>920</x>
+          <y>40</y>
+          <width>381</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string>Select User</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Francisco Resquin</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Benjamin Finke</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string/>
+         </property>
+        </item>
+       </widget>
+       <widget class="QPushButton" name="taut_pButton_load">
+        <property name="geometry">
+         <rect>
+          <x>1330</x>
+          <y>40</y>
+          <width>261</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-style:outset;
+border-width:2px;
+border-color:black;
+border-radius:10px</string>
+        </property>
+        <property name="text">
+         <string>Load Profile</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="taut_Socketimage">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>380</y>
+          <width>371</width>
+          <height>421</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../../../../../../../.designer/pictures/SocketScketch.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="taut_pButton_run">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>1000</y>
+          <width>301</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-style:outset;
+border-width:2px;
+border-color:black;
+border-radius:10px
+</string>
+        </property>
+        <property name="text">
+         <string>Run</string>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_8">
+        <property name="geometry">
+         <rect>
+          <x>460</x>
+          <y>370</y>
+          <width>171</width>
+          <height>401</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_10"/>
+       </widget>
+       <widget class="QComboBox" name="taut_cBox_mode">
+        <property name="geometry">
+         <rect>
+          <x>750</x>
+          <y>830</y>
+          <width>231</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Mode 1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Mode 2</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Mode 3</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QPushButton" name="taut_pButton_read">
+        <property name="geometry">
+         <rect>
+          <x>630</x>
+          <y>40</y>
+          <width>261</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <weight>50</weight>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-style:outset;
+border-width:2px;
+border-color:black;
+border-radius:10px</string>
+        </property>
+        <property name="text">
+         <string>Read DataBase</string>
+        </property>
+       </widget>
+       <widget class="Line" name="line_5">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>940</y>
+          <width>1781</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_6">
+        <property name="geometry">
+         <rect>
+          <x>640</x>
+          <y>350</y>
+          <width>1591</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_16">
+        <property name="geometry">
+         <rect>
+          <x>770</x>
+          <y>180</y>
+          <width>31</width>
+          <height>591</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_17">
+        <property name="geometry">
+         <rect>
+          <x>930</x>
+          <y>180</y>
+          <width>31</width>
+          <height>591</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_18">
+        <property name="geometry">
+         <rect>
+          <x>1090</x>
+          <y>170</y>
+          <width>31</width>
+          <height>601</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_19">
+        <property name="geometry">
+         <rect>
+          <x>1250</x>
+          <y>170</y>
+          <width>31</width>
+          <height>601</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_20">
+        <property name="geometry">
+         <rect>
+          <x>1410</x>
+          <y>170</y>
+          <width>31</width>
+          <height>601</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_37">
+        <property name="geometry">
+         <rect>
+          <x>481</x>
+          <y>475</y>
+          <width>141</width>
+          <height>88</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Medial</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_39">
+        <property name="geometry">
+         <rect>
+          <x>481</x>
+          <y>682</y>
+          <width>141</width>
+          <height>88</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Posterior</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_38">
+        <property name="geometry">
+         <rect>
+          <x>481</x>
+          <y>578</y>
+          <width>141</width>
+          <height>89</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Ramus</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_36">
+        <property name="geometry">
+         <rect>
+          <x>481</x>
+          <y>371</y>
+          <width>141</width>
+          <height>89</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Anterior</string>
+        </property>
+       </widget>
+       <widget class="Line" name="line_21">
+        <property name="geometry">
+         <rect>
+          <x>1570</x>
+          <y>180</y>
+          <width>31</width>
+          <height>591</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_22">
+        <property name="geometry">
+         <rect>
+          <x>1730</x>
+          <y>180</y>
+          <width>31</width>
+          <height>591</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_23">
+        <property name="geometry">
+         <rect>
+          <x>1890</x>
+          <y>180</y>
+          <width>31</width>
+          <height>591</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_24">
+        <property name="geometry">
+         <rect>
+          <x>2050</x>
+          <y>180</y>
+          <width>31</width>
+          <height>591</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="taut_cBox_stand_anterior">
+        <property name="geometry">
+         <rect>
+          <x>800</x>
+          <y>390</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Stiff</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Flexible</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="taut_cBox_sit_anterior">
+        <property name="geometry">
+         <rect>
+          <x>640</x>
+          <y>390</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Stiff</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Flexible</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="taut_cBox_walk_anterior">
+        <property name="geometry">
+         <rect>
+          <x>960</x>
+          <y>390</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Stiff</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Flexible</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="taut_cBox_walk1_anterior">
+        <property name="geometry">
+         <rect>
+          <x>1120</x>
+          <y>390</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Stiff</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Flexible</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="taut_cBox_uneven_anterior">
+        <property name="geometry">
+         <rect>
+          <x>1280</x>
+          <y>390</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Stiff</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Flexible</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="taut_cBox_walk2_anterior">
+        <property name="geometry">
+         <rect>
+          <x>1440</x>
+          <y>390</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Stiff</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Flexible</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="taut_cBox_asc_anterior">
+        <property name="geometry">
+         <rect>
+          <x>1600</x>
+          <y>390</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Stiff</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Flexible</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="taut_cBox_desc_anterior">
+        <property name="geometry">
+         <rect>
+          <x>1760</x>
+          <y>390</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Stiff</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Flexible</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="taut_cBox_ascstair_anterior">
+        <property name="geometry">
+         <rect>
+          <x>1920</x>
+          <y>390</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Stiff</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Flexible</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="taut_cBox_descstair_anterior">
+        <property name="geometry">
+         <rect>
+          <x>2080</x>
+          <y>390</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Stiff</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Flexible</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="taut_cBox_walk_medial">
+        <property name="geometry">
+         <rect>
+          <x>960</x>
+          <y>490</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Stiff</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Flexible</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="taut_cBox_sit_medial">
+        <property name="geometry">
+         <rect>
+          <x>640</x>
+          <y>490</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Stiff</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Flexible</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="taut_cBox_desc_medial">
+        <property name="geometry">
+         <rect>
+          <x>1760</x>
+          <y>490</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Stiff</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Flexible</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="taut_cBox_walk1_medial">
+        <property name="geometry">
+         <rect>
+          <x>1120</x>
+          <y>490</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Stiff</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Flexible</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="taut_cBox_uneven_medial">
+        <property name="geometry">
+         <rect>
+          <x>1280</x>
+          <y>490</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Stiff</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Flexible</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="taut_cBox_asc_medial">
+        <property name="geometry">
+         <rect>
+          <x>1600</x>
+          <y>490</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Stiff</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Flexible</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="taut_cBox_descstair_medial">
+        <property name="geometry">
+         <rect>
+          <x>2080</x>
+          <y>490</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Stiff</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Flexible</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="taut_cBox_stand_medial">
+        <property name="geometry">
+         <rect>
+          <x>800</x>
+          <y>490</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Stiff</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Flexible</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="taut_cBox_walk2_medial">
+        <property name="geometry">
+         <rect>
+          <x>1440</x>
+          <y>490</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Stiff</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Flexible</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="taut_cBox_ascstair_medial">
+        <property name="geometry">
+         <rect>
+          <x>1920</x>
+          <y>490</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Stiff</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Flexible</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="taut_cBox_sit_ramus">
+        <property name="geometry">
+         <rect>
+          <x>640</x>
+          <y>600</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Stiff</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Flexible</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="taut_cBox_uneven_ramus">
+        <property name="geometry">
+         <rect>
+          <x>1280</x>
+          <y>600</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Stiff</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Flexible</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="taut_cBox_stand_ramus">
+        <property name="geometry">
+         <rect>
+          <x>800</x>
+          <y>600</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Stiff</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Flexible</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="taut_cBox_descstair_ramus">
+        <property name="geometry">
+         <rect>
+          <x>2080</x>
+          <y>600</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Stiff</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Flexible</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="taut_cBox_walk2_ramus">
+        <property name="geometry">
+         <rect>
+          <x>1440</x>
+          <y>600</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Stiff</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Flexible</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="taut_cBox_desc_ramus">
+        <property name="geometry">
+         <rect>
+          <x>1760</x>
+          <y>600</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Stiff</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Flexible</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="taut_cBox_ascstair_ramus">
+        <property name="geometry">
+         <rect>
+          <x>1920</x>
+          <y>600</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Stiff</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Flexible</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="taut_cBox_walk1_ramus">
+        <property name="geometry">
+         <rect>
+          <x>1120</x>
+          <y>600</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Stiff</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Flexible</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="taut_cBox_walk_ramus">
+        <property name="geometry">
+         <rect>
+          <x>960</x>
+          <y>600</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Stiff</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Flexible</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="taut_cBox_asc_ramus">
+        <property name="geometry">
+         <rect>
+          <x>1600</x>
+          <y>600</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Stiff</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Flexible</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="taut_cBox_asc_posterior">
+        <property name="geometry">
+         <rect>
+          <x>1600</x>
+          <y>700</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Stiff</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Flexible</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="taut_cBox_descstair_posterior">
+        <property name="geometry">
+         <rect>
+          <x>2080</x>
+          <y>700</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Stiff</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Flexible</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="taut_cBox_sit_posterior">
+        <property name="geometry">
+         <rect>
+          <x>640</x>
+          <y>700</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Stiff</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Flexible</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="taut_cBox_stand_posterior">
+        <property name="geometry">
+         <rect>
+          <x>800</x>
+          <y>700</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Stiff</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Flexible</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="taut_cBox_walk1_posterior">
+        <property name="geometry">
+         <rect>
+          <x>1120</x>
+          <y>700</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Stiff</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Flexible</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="taut_cBox_uneven_posterior">
+        <property name="geometry">
+         <rect>
+          <x>1280</x>
+          <y>700</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Stiff</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Flexible</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="taut_cBox_walk_posterior">
+        <property name="geometry">
+         <rect>
+          <x>960</x>
+          <y>700</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Stiff</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Flexible</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="taut_cBox_walk2_posterior">
+        <property name="geometry">
+         <rect>
+          <x>1440</x>
+          <y>700</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Stiff</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Flexible</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="taut_cBox_desc_posterior">
+        <property name="geometry">
+         <rect>
+          <x>1760</x>
+          <y>700</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Stiff</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Flexible</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="taut_cBox_ascstair_posterior">
+        <property name="geometry">
+         <rect>
+          <x>1920</x>
+          <y>700</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Stiff</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Flexible</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="taut_label_mode">
+        <property name="geometry">
+         <rect>
+          <x>460</x>
+          <y>810</y>
+          <width>251</width>
+          <height>88</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Operational Mode</string>
+        </property>
+       </widget>
+       <widget class="Line" name="line_9">
+        <property name="geometry">
+         <rect>
+          <x>450</x>
+          <y>140</y>
+          <width>1781</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="tnew_lab_walkingUneven_3">
+        <property name="geometry">
+         <rect>
+          <x>1280</x>
+          <y>200</y>
+          <width>121</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../pictures/WalkingUneven_Icon.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="tnew_lab_descendingRamp_3">
+        <property name="geometry">
+         <rect>
+          <x>1760</x>
+          <y>200</y>
+          <width>121</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../pictures/DescendingRamp_Icon.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="tnew_lab_sitting_3">
+        <property name="geometry">
+         <rect>
+          <x>650</x>
+          <y>200</y>
+          <width>91</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../pictures/sitting_Icom.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="tnew_lab_standing_3">
+        <property name="geometry">
+         <rect>
+          <x>830</x>
+          <y>200</y>
+          <width>61</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../pictures/Standing_Icon.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="tnew_lab_walkingSlow_3">
+        <property name="geometry">
+         <rect>
+          <x>970</x>
+          <y>200</y>
+          <width>91</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../pictures/WalkingSlow_Icon.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="tnew_lab_walkingFast_3">
+        <property name="geometry">
+         <rect>
+          <x>1110</x>
+          <y>200</y>
+          <width>121</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../pictures/WalkingFast_icon.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="tnew_lab_ascendingRamp_3">
+        <property name="geometry">
+         <rect>
+          <x>1600</x>
+          <y>200</y>
+          <width>121</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../pictures/AscendingRamp_Icon.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="tnew_lab_ascendingStair_3">
+        <property name="geometry">
+         <rect>
+          <x>1920</x>
+          <y>210</y>
+          <width>121</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../pictures/AscendingStair_Icon.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="tnew_lab_walkingCircles_3">
+        <property name="geometry">
+         <rect>
+          <x>1440</x>
+          <y>190</y>
+          <width>121</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../pictures/WalkingCircles_Icon.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="tnew_lab_descendingStair_3">
+        <property name="geometry">
+         <rect>
+          <x>2080</x>
+          <y>200</y>
+          <width>121</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../pictures/DescendingStair_Icon.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_Profile">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <attribute name="title">
+        <string>Profile</string>
+       </attribute>
+       <widget class="QLabel" name="tnew_Socketimage">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>370</y>
+          <width>371</width>
+          <height>421</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../../../../../../../.designer/pictures/SocketScketch.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="tnew_pButton_load">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>140</y>
+          <width>161</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-style:outset;
+border-width:2px;
+border-color:black;
+border-radius:10px</string>
+        </property>
+        <property name="text">
+         <string>Load</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="tnew_cBox_Users">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>60</y>
+          <width>381</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <item>
+         <property name="text">
+          <string>Select User</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QPushButton" name="tnew_pButton_read">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>140</y>
+          <width>161</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-style:outset;
+border-width:2px;
+border-color:black;
+border-radius:10px</string>
+        </property>
+        <property name="text">
+         <string>Read</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="tnew_cBox_walkingfast_ramus">
+        <property name="geometry">
+         <rect>
+          <x>1140</x>
+          <y>670</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="tnew_cBox_ascendingstair_ramus">
+        <property name="geometry">
+         <rect>
+          <x>1940</x>
+          <y>670</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="tnew_lab_walkingFast">
+        <property name="geometry">
+         <rect>
+          <x>1140</x>
+          <y>260</y>
+          <width>121</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../pictures/WalkingFast_icon.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="tnew_lab_walkingCircle">
+        <property name="geometry">
+         <rect>
+          <x>1470</x>
+          <y>250</y>
+          <width>121</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../pictures/WalkingCircles_Icon.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="Line" name="line_25">
+        <property name="geometry">
+         <rect>
+          <x>1430</x>
+          <y>240</y>
+          <width>31</width>
+          <height>601</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="tnew_cBox_walkingfast_posterior">
+        <property name="geometry">
+         <rect>
+          <x>1140</x>
+          <y>770</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="tnew_cBox_walkingcircle_medial">
+        <property name="geometry">
+         <rect>
+          <x>1460</x>
+          <y>560</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="tnew_cBox_descendingramp_ramus">
+        <property name="geometry">
+         <rect>
+          <x>1780</x>
+          <y>670</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="Line" name="line_26">
+        <property name="geometry">
+         <rect>
+          <x>1750</x>
+          <y>250</y>
+          <width>31</width>
+          <height>591</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="tnew_cBox_walkingcircle_anterior">
+        <property name="geometry">
+         <rect>
+          <x>1460</x>
+          <y>460</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="Line" name="line_27">
+        <property name="geometry">
+         <rect>
+          <x>1910</x>
+          <y>250</y>
+          <width>31</width>
+          <height>591</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="tnew_lab_walkingUneven">
+        <property name="geometry">
+         <rect>
+          <x>1310</x>
+          <y>260</y>
+          <width>121</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../pictures/WalkingUneven_Icon.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="tnew_cBox_walkinguneven_medial">
+        <property name="geometry">
+         <rect>
+          <x>1300</x>
+          <y>560</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="tnew_cBox_ascendingstair_anterior">
+        <property name="geometry">
+         <rect>
+          <x>1940</x>
+          <y>460</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="tnew_lab_descendingRamp">
+        <property name="geometry">
+         <rect>
+          <x>1790</x>
+          <y>260</y>
+          <width>121</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../pictures/DescendingRamp_Icon.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="tnew_cBox_walkingcircle_posterior">
+        <property name="geometry">
+         <rect>
+          <x>1460</x>
+          <y>770</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="tnew_cBox_standing_ramus">
+        <property name="geometry">
+         <rect>
+          <x>820</x>
+          <y>670</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="tnew_lab_ascendingStair">
+        <property name="geometry">
+         <rect>
+          <x>1950</x>
+          <y>270</y>
+          <width>121</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../pictures/AscendingStair_Icon.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="tnew_cBox_descendingstair_anterior">
+        <property name="geometry">
+         <rect>
+          <x>2100</x>
+          <y>460</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="tnew_lab_standing">
+        <property name="geometry">
+         <rect>
+          <x>860</x>
+          <y>260</y>
+          <width>61</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../pictures/Standing_Icon.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_40">
+        <property name="geometry">
+         <rect>
+          <x>501</x>
+          <y>545</y>
+          <width>141</width>
+          <height>88</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Medial</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="tnew_cBox_descendingstair_medial">
+        <property name="geometry">
+         <rect>
+          <x>2100</x>
+          <y>560</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="tnew_cBox_walkingslow_posterior">
+        <property name="geometry">
+         <rect>
+          <x>980</x>
+          <y>770</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Stiff</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Flexible</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="tnew_cBox_ascendingramp_posterior">
+        <property name="geometry">
+         <rect>
+          <x>1620</x>
+          <y>770</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="tnew_cBox_ascendingramp_medial">
+        <property name="geometry">
+         <rect>
+          <x>1620</x>
+          <y>560</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="Line" name="line_28">
+        <property name="geometry">
+         <rect>
+          <x>790</x>
+          <y>250</y>
+          <width>31</width>
+          <height>591</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+       <widget class="Line" name="line_29">
+        <property name="geometry">
+         <rect>
+          <x>1270</x>
+          <y>240</y>
+          <width>31</width>
+          <height>601</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="tnew_cBox_descendingstair_ramus">
+        <property name="geometry">
+         <rect>
+          <x>2100</x>
+          <y>670</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="tnew_cBox_standing_anterior">
+        <property name="geometry">
+         <rect>
+          <x>820</x>
+          <y>460</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="Line" name="line_7">
+        <property name="geometry">
+         <rect>
+          <x>660</x>
+          <y>420</y>
+          <width>1591</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="tnew_cBox_walkingfast_medial">
+        <property name="geometry">
+         <rect>
+          <x>1140</x>
+          <y>560</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="tnew_cBox_descendingstair_posterior">
+        <property name="geometry">
+         <rect>
+          <x>2100</x>
+          <y>770</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="tnew_lab_walkingSlow">
+        <property name="geometry">
+         <rect>
+          <x>1000</x>
+          <y>260</y>
+          <width>91</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../pictures/WalkingSlow_Icon.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="tnew_cBox_descendingramp_medial">
+        <property name="geometry">
+         <rect>
+          <x>1780</x>
+          <y>560</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="Line" name="line_30">
+        <property name="geometry">
+         <rect>
+          <x>2070</x>
+          <y>250</y>
+          <width>31</width>
+          <height>591</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="tnew_cBox_ascendingramp_anterior">
+        <property name="geometry">
+         <rect>
+          <x>1620</x>
+          <y>460</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="tnew_cBox_standing_posterior">
+        <property name="geometry">
+         <rect>
+          <x>820</x>
+          <y>770</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="tnew_cBox_sitting_posterior">
+        <property name="geometry">
+         <rect>
+          <x>660</x>
+          <y>770</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="tnew_cBox_standing_medial">
+        <property name="geometry">
+         <rect>
+          <x>820</x>
+          <y>560</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="tnew_cBox_descendingramp_posterior">
+        <property name="geometry">
+         <rect>
+          <x>1780</x>
+          <y>770</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="tnew_cBox_sitting_medial">
+        <property name="geometry">
+         <rect>
+          <x>660</x>
+          <y>560</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="tnew_cBox_walkingslow_anterior">
+        <property name="geometry">
+         <rect>
+          <x>980</x>
+          <y>460</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="label_41">
+        <property name="geometry">
+         <rect>
+          <x>501</x>
+          <y>648</y>
+          <width>141</width>
+          <height>89</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Ramus</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="tnew_cBox_ascendingstair_medial">
+        <property name="geometry">
+         <rect>
+          <x>1940</x>
+          <y>560</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="Line" name="line_31">
+        <property name="geometry">
+         <rect>
+          <x>1110</x>
+          <y>240</y>
+          <width>31</width>
+          <height>601</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="tnew_cBox_sitting_anterior">
+        <property name="geometry">
+         <rect>
+          <x>660</x>
+          <y>460</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="Line" name="line_10">
+        <property name="geometry">
+         <rect>
+          <x>470</x>
+          <y>210</y>
+          <width>1781</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="tnew_cBox_walkingcircle_ramus">
+        <property name="geometry">
+         <rect>
+          <x>1460</x>
+          <y>670</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="Line" name="line_32">
+        <property name="geometry">
+         <rect>
+          <x>1590</x>
+          <y>250</y>
+          <width>31</width>
+          <height>591</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+       <widget class="QLabel" name="tnew_lab_sitting">
+        <property name="geometry">
+         <rect>
+          <x>680</x>
+          <y>260</y>
+          <width>91</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../pictures/sitting_Icom.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="tnew_lab_descendingStair">
+        <property name="geometry">
+         <rect>
+          <x>2110</x>
+          <y>260</y>
+          <width>121</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../pictures/DescendingStair_Icon.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="tnew_cBox_walkingslow_ramus">
+        <property name="geometry">
+         <rect>
+          <x>980</x>
+          <y>670</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="tnew_cBox_sitting_ramus">
+        <property name="geometry">
+         <rect>
+          <x>660</x>
+          <y>670</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="tnew_cBox_walkinguneven_ramus">
+        <property name="geometry">
+         <rect>
+          <x>1300</x>
+          <y>670</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="tnew_cBox_ascendingramp_ramus">
+        <property name="geometry">
+         <rect>
+          <x>1620</x>
+          <y>670</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="Line" name="line_33">
+        <property name="geometry">
+         <rect>
+          <x>950</x>
+          <y>250</y>
+          <width>31</width>
+          <height>591</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="tnew_cBox_walkingfast_anterior">
+        <property name="geometry">
+         <rect>
+          <x>1140</x>
+          <y>460</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="tnew_cBox_ascendingstair_posterior">
+        <property name="geometry">
+         <rect>
+          <x>1940</x>
+          <y>770</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="label_42">
+        <property name="geometry">
+         <rect>
+          <x>501</x>
+          <y>752</y>
+          <width>141</width>
+          <height>88</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Posterior</string>
+        </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_9">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>440</y>
+          <width>171</width>
+          <height>401</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_11"/>
+       </widget>
+       <widget class="QComboBox" name="tnew_cBox_walkinguneven_posterior">
+        <property name="geometry">
+         <rect>
+          <x>1300</x>
+          <y>770</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QComboBox" name="tnew_cBox_descendingramp_anterior">
+        <property name="geometry">
+         <rect>
+          <x>1780</x>
+          <y>460</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="label_43">
+        <property name="geometry">
+         <rect>
+          <x>501</x>
+          <y>441</y>
+          <width>141</width>
+          <height>89</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Anterior</string>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="tnew_cBox_walkinguneven_anterior">
+        <property name="geometry">
+         <rect>
+          <x>1300</x>
+          <y>460</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="tnew_lab_ascendingRamp">
+        <property name="geometry">
+         <rect>
+          <x>1630</x>
+          <y>260</y>
+          <width>121</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>../pictures/AscendingRamp_Icon.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="tnew_cBox_walkingslow_medial">
+        <property name="geometry">
+         <rect>
+          <x>980</x>
+          <y>560</y>
+          <width>131</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+          <stylestrategy>PreferDefault</stylestrategy>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="currentIndex">
+         <number>0</number>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="tnew_label_name">
+        <property name="geometry">
+         <rect>
+          <x>850</x>
+          <y>90</y>
+          <width>121</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Name</string>
+        </property>
+       </widget>
+       <widget class="QLineEdit" name="tnew_lEdit_name">
+        <property name="geometry">
+         <rect>
+          <x>1000</x>
+          <y>90</y>
+          <width>821</width>
+          <height>61</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="Line" name="line_11">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>970</y>
+          <width>1781</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+       <widget class="QComboBox" name="tnew_cBox_mode">
+        <property name="geometry">
+         <rect>
+          <x>770</x>
+          <y>890</y>
+          <width>231</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <item>
+         <property name="text">
+          <string>N/A</string>
+         </property>
+        </item>
+       </widget>
+       <widget class="QLabel" name="tnew_label_mode">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>870</y>
+          <width>251</width>
+          <height>88</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Operational Mode</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="tnew_pButton_save">
+        <property name="geometry">
+         <rect>
+          <x>480</x>
+          <y>1020</y>
+          <width>301</width>
+          <height>81</height>
+         </rect>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-style:outset;
+border-width:2px;
+border-color:black;
+border-radius:10px
+</string>
+        </property>
+        <property name="text">
+         <string>Save</string>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>2280</width>
+     <height>47</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_Connect"/>
+   <addaction name="separator"/>
+  </widget>
+  <action name="action_Connect">
+   <property name="icon">
+    <iconset>
+     <normaloff>../pictures/Connect_Icon.png</normaloff>../pictures/Connect_Icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Connect</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>tact_pButton_antStiff</tabstop>
+  <tabstop>tact_pButton_antFexible</tabstop>
+  <tabstop>tact_pButton_medStiff</tabstop>
+  <tabstop>tact_pButton_medFexible</tabstop>
+  <tabstop>tact_pButton_ramStiff</tabstop>
+  <tabstop>tact_pButton_ramFexible</tabstop>
+  <tabstop>tact_pButton_posStiff</tabstop>
+  <tabstop>tact_pButton_posFexible</tabstop>
+  <tabstop>tact_pButton_AllStiff</tabstop>
+  <tabstop>tact_pButton_AllFlexible</tabstop>
+  <tabstop>taut_pButton_read</tabstop>
+  <tabstop>taut_cBox_Users</tabstop>
+  <tabstop>taut_pButton_load</tabstop>
+  <tabstop>taut_cBox_sit_anterior</tabstop>
+  <tabstop>taut_cBox_sit_medial</tabstop>
+  <tabstop>taut_cBox_sit_ramus</tabstop>
+  <tabstop>taut_cBox_sit_posterior</tabstop>
+  <tabstop>taut_cBox_stand_anterior</tabstop>
+  <tabstop>taut_cBox_stand_medial</tabstop>
+  <tabstop>taut_cBox_stand_ramus</tabstop>
+  <tabstop>taut_cBox_stand_posterior</tabstop>
+  <tabstop>taut_cBox_walk_anterior</tabstop>
+  <tabstop>taut_cBox_walk_medial</tabstop>
+  <tabstop>taut_cBox_walk_ramus</tabstop>
+  <tabstop>taut_cBox_walk_posterior</tabstop>
+  <tabstop>taut_cBox_walk1_anterior</tabstop>
+  <tabstop>taut_cBox_walk1_medial</tabstop>
+  <tabstop>taut_cBox_walk1_ramus</tabstop>
+  <tabstop>taut_cBox_walk1_posterior</tabstop>
+  <tabstop>taut_cBox_uneven_anterior</tabstop>
+  <tabstop>taut_cBox_uneven_medial</tabstop>
+  <tabstop>taut_cBox_uneven_ramus</tabstop>
+  <tabstop>taut_cBox_uneven_posterior</tabstop>
+  <tabstop>taut_cBox_walk2_anterior</tabstop>
+  <tabstop>taut_cBox_walk2_medial</tabstop>
+  <tabstop>taut_cBox_walk2_ramus</tabstop>
+  <tabstop>taut_cBox_walk2_posterior</tabstop>
+  <tabstop>taut_cBox_asc_anterior</tabstop>
+  <tabstop>taut_cBox_asc_medial</tabstop>
+  <tabstop>taut_cBox_asc_ramus</tabstop>
+  <tabstop>taut_cBox_asc_posterior</tabstop>
+  <tabstop>taut_cBox_desc_anterior</tabstop>
+  <tabstop>taut_cBox_desc_medial</tabstop>
+  <tabstop>taut_cBox_desc_ramus</tabstop>
+  <tabstop>taut_cBox_desc_posterior</tabstop>
+  <tabstop>taut_cBox_ascstair_anterior</tabstop>
+  <tabstop>taut_cBox_ascstair_medial</tabstop>
+  <tabstop>taut_cBox_ascstair_ramus</tabstop>
+  <tabstop>taut_cBox_ascstair_posterior</tabstop>
+  <tabstop>taut_cBox_descstair_anterior</tabstop>
+  <tabstop>taut_cBox_descstair_medial</tabstop>
+  <tabstop>taut_cBox_descstair_ramus</tabstop>
+  <tabstop>taut_cBox_descstair_posterior</tabstop>
+  <tabstop>taut_cBox_mode</tabstop>
+  <tabstop>taut_pButton_run</tabstop>
+  <tabstop>tnew_cBox_Users</tabstop>
+  <tabstop>tnew_pButton_read</tabstop>
+  <tabstop>tnew_pButton_load</tabstop>
+  <tabstop>tnew_lEdit_name</tabstop>
+  <tabstop>tnew_cBox_sitting_anterior</tabstop>
+  <tabstop>tnew_cBox_sitting_medial</tabstop>
+  <tabstop>tnew_cBox_sitting_ramus</tabstop>
+  <tabstop>tnew_cBox_sitting_posterior</tabstop>
+  <tabstop>tnew_cBox_standing_anterior</tabstop>
+  <tabstop>tnew_cBox_standing_medial</tabstop>
+  <tabstop>tnew_cBox_standing_ramus</tabstop>
+  <tabstop>tnew_cBox_standing_posterior</tabstop>
+  <tabstop>tnew_cBox_walkingslow_anterior</tabstop>
+  <tabstop>tnew_cBox_walkingslow_medial</tabstop>
+  <tabstop>tnew_cBox_walkingslow_ramus</tabstop>
+  <tabstop>tnew_cBox_walkingslow_posterior</tabstop>
+  <tabstop>tnew_cBox_walkingfast_anterior</tabstop>
+  <tabstop>tnew_cBox_walkingfast_medial</tabstop>
+  <tabstop>tnew_cBox_walkingfast_ramus</tabstop>
+  <tabstop>tnew_cBox_walkingfast_posterior</tabstop>
+  <tabstop>tnew_cBox_walkinguneven_anterior</tabstop>
+  <tabstop>tnew_cBox_walkinguneven_medial</tabstop>
+  <tabstop>tnew_cBox_walkinguneven_ramus</tabstop>
+  <tabstop>tnew_cBox_walkinguneven_posterior</tabstop>
+  <tabstop>tnew_cBox_walkingcircle_anterior</tabstop>
+  <tabstop>tnew_cBox_walkingcircle_medial</tabstop>
+  <tabstop>tnew_cBox_walkingcircle_ramus</tabstop>
+  <tabstop>tnew_cBox_walkingcircle_posterior</tabstop>
+  <tabstop>tnew_cBox_ascendingramp_anterior</tabstop>
+  <tabstop>tnew_cBox_ascendingramp_medial</tabstop>
+  <tabstop>tnew_cBox_ascendingramp_ramus</tabstop>
+  <tabstop>tnew_cBox_ascendingramp_posterior</tabstop>
+  <tabstop>tnew_cBox_descendingramp_anterior</tabstop>
+  <tabstop>tnew_cBox_descendingramp_medial</tabstop>
+  <tabstop>tnew_cBox_descendingramp_ramus</tabstop>
+  <tabstop>tnew_cBox_descendingramp_posterior</tabstop>
+  <tabstop>tnew_cBox_ascendingstair_anterior</tabstop>
+  <tabstop>tnew_cBox_ascendingstair_medial</tabstop>
+  <tabstop>tnew_cBox_ascendingstair_ramus</tabstop>
+  <tabstop>tnew_cBox_ascendingstair_posterior</tabstop>
+  <tabstop>tnew_cBox_descendingstair_anterior</tabstop>
+  <tabstop>tnew_cBox_descendingstair_medial</tabstop>
+  <tabstop>tnew_cBox_descendingstair_ramus</tabstop>
+  <tabstop>tnew_cBox_descendingstair_posterior</tabstop>
+  <tabstop>tnew_cBox_mode</tabstop>
+  <tabstop>tnew_pButton_save</tabstop>
+  <tabstop>taut_pButton_dataStatus</tabstop>
+  <tabstop>tact_pButton_serialStatus</tabstop>
+  <tabstop>taut_pButton_controlStatus</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

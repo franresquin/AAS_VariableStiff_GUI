@@ -1,0 +1,2598 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>2046</width>
+    <height>1147</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Variable Stiffness</string>
+  </property>
+  <property name="dockNestingEnabled">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="0">
+     <widget class="QTabWidget" name="tab_customize_3">
+      <property name="minimumSize">
+       <size>
+        <width>2002</width>
+        <height>984</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>12</pointsize>
+       </font>
+      </property>
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>80</width>
+        <height>60</height>
+       </size>
+      </property>
+      <property name="documentMode">
+       <bool>false</bool>
+      </property>
+      <property name="tabsClosable">
+       <bool>false</bool>
+      </property>
+      <property name="movable">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="tab_customize">
+       <attribute name="title">
+        <string>Actionable</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="0">
+         <widget class="QWidget" name="widget" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_8">
+             <item>
+              <widget class="QPushButton" name="tact_pButton_serialStatus">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Connect</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>168</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_6">
+             <item>
+              <widget class="QLabel" name="label_2">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Anterior</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="tact_lbl_anterior"/>
+             </item>
+             <item>
+              <widget class="QPushButton" name="tact_pButton_antStiff">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Stiff</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="tact_pButton_antFexible">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Flexible</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_5">
+             <item>
+              <widget class="QLabel" name="label_3">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Medial</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="tact_lbl_medial"/>
+             </item>
+             <item>
+              <widget class="QPushButton" name="tact_pButton_medStiff">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Stiff</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="tact_pButton_medFexible">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Flexible</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_3">
+             <item>
+              <widget class="QLabel" name="label_4">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Ramus</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="tact_lbl_ramus"/>
+             </item>
+             <item>
+              <widget class="QPushButton" name="tact_pButton_ramStiff">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Stiff</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="tact_pButton_ramFexible">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Flexible</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout_2">
+             <item>
+              <widget class="QLabel" name="label_5">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Posterior</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLineEdit" name="tact_lbl_posterior"/>
+             </item>
+             <item>
+              <widget class="QPushButton" name="tact_pButton_posStiff">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Stiff</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="tact_pButton_posFexible">
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>Flexible</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <layout class="QVBoxLayout" name="verticalLayout">
+             <item>
+              <widget class="QPushButton" name="tact_pButton_AllStiff">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>All Stiff</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="tact_pButton_AllFlexible">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>All Flexible</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QLabel" name="tact_Socketimage">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>2400</width>
+               <height>2400</height>
+              </size>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap>../pictures/SocketScketch.png</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QWidget" name="widget_2" native="true">
+          <layout class="QVBoxLayout" name="verticalLayout_21">
+           <item>
+            <widget class="QSplitter" name="splitter">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <widget class="QWidget" name="">
+              <layout class="QHBoxLayout" name="horizontalLayout_4">
+               <item>
+                <widget class="QPushButton" name="tact_pButton_read">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>10</pointsize>
+                   <weight>50</weight>
+                   <italic>false</italic>
+                   <bold>false</bold>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-style:outset;
+border-width:2px;
+border-color:black;
+border-radius:10px</string>
+                 </property>
+                 <property name="text">
+                  <string>Read DataBase</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QComboBox" name="tact_cBox_Users">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="font">
+                  <font>
+                   <pointsize>8</pointsize>
+                  </font>
+                 </property>
+                 <item>
+                  <property name="text">
+                   <string>Select User</string>
+                  </property>
+                 </item>
+                 <item>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </item>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+             <widget class="QWidget" name="">
+              <layout class="QHBoxLayout" name="horizontalLayout_5">
+               <item>
+                <widget class="QLabel" name="tact_label_name">
+                 <property name="text">
+                  <string>Name</string>
+                 </property>
+                 <property name="alignment">
+                  <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLineEdit" name="tact_lEdit_name">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </item>
+           <item>
+            <widget class="QFrame" name="frame">
+             <property name="frameShape">
+              <enum>QFrame::StyledPanel</enum>
+             </property>
+             <property name="frameShadow">
+              <enum>QFrame::Raised</enum>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_6">
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_9">
+               <item>
+                <widget class="QCheckBox" name="tact_cbox_mode1">
+                 <property name="font">
+                  <font>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                 <property name="layoutDirection">
+                  <enum>Qt::RightToLeft</enum>
+                 </property>
+                 <property name="autoFillBackground">
+                  <bool>false</bool>
+                 </property>
+                 <property name="text">
+                  <string>Mode 1</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="tact_cbox_mode2">
+                 <property name="font">
+                  <font>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                 <property name="layoutDirection">
+                  <enum>Qt::RightToLeft</enum>
+                 </property>
+                 <property name="text">
+                  <string>Mode 2</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="tact_cbox_mode3">
+                 <property name="font">
+                  <font>
+                   <pointsize>10</pointsize>
+                  </font>
+                 </property>
+                 <property name="layoutDirection">
+                  <enum>Qt::RightToLeft</enum>
+                 </property>
+                 <property name="text">
+                  <string>Mode 3</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_10">
+               <item>
+                <widget class="QPushButton" name="tact_pButton_ld_sitting">
+                 <property name="styleSheet">
+                  <string notr="true">border-style:outset;
+border-width:1px;
+border-color:black;
+border-radius:10px</string>
+                 </property>
+                 <property name="text">
+                  <string>Load</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>../pictures/load_Icon.png</normaloff>../pictures/load_Icon.png</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="tact_lab_sitting">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::NoFrame</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Plain</enum>
+                 </property>
+                 <property name="lineWidth">
+                  <number>1</number>
+                 </property>
+                 <property name="midLineWidth">
+                  <number>1</number>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap>../pictures/sitting_Icom.png</pixmap>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="tact_pButton_sv_sitting">
+                 <property name="font">
+                  <font>
+                   <pointsize>8</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-style:outset;
+border-width:1px;
+border-color:black;
+border-radius:10px</string>
+                 </property>
+                 <property name="text">
+                  <string>Save</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>../pictures/save1_icon.png</normaloff>../pictures/save1_icon.png</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_12">
+               <item>
+                <widget class="QPushButton" name="tact_pButton_ld_standing">
+                 <property name="font">
+                  <font>
+                   <pointsize>8</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-style:outset;
+border-width:1px;
+border-color:black;
+border-radius:10px</string>
+                 </property>
+                 <property name="text">
+                  <string>Load</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>../pictures/load_Icon.png</normaloff>../pictures/load_Icon.png</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="tact_lab_standing">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap>../pictures/Standing_Icon.png</pixmap>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="tact_pButton_sv_standing">
+                 <property name="font">
+                  <font>
+                   <pointsize>8</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-style:outset;
+border-width:1px;
+border-color:black;
+border-radius:10px</string>
+                 </property>
+                 <property name="text">
+                  <string>Save</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>../pictures/save1_icon.png</normaloff>../pictures/save1_icon.png</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_13">
+               <item>
+                <widget class="QPushButton" name="tact_pButton_ld_walkingslow">
+                 <property name="font">
+                  <font>
+                   <pointsize>8</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-style:outset;
+border-width:1px;
+border-color:black;
+border-radius:10px</string>
+                 </property>
+                 <property name="text">
+                  <string>Load</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>../pictures/load_Icon.png</normaloff>../pictures/load_Icon.png</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="tact_lab_walkingslow">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap>../pictures/WalkingSlow_Icon.png</pixmap>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="tact_pButton_sv_walkingslow">
+                 <property name="font">
+                  <font>
+                   <pointsize>8</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-style:outset;
+border-width:1px;
+border-color:black;
+border-radius:10px</string>
+                 </property>
+                 <property name="text">
+                  <string>Save</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>../pictures/save1_icon.png</normaloff>../pictures/save1_icon.png</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_14">
+               <item>
+                <widget class="QPushButton" name="tact_pButton_ld_walkingfast">
+                 <property name="font">
+                  <font>
+                   <pointsize>8</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-style:outset;
+border-width:1px;
+border-color:black;
+border-radius:10px</string>
+                 </property>
+                 <property name="text">
+                  <string>Load</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>../pictures/load_Icon.png</normaloff>../pictures/load_Icon.png</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="tact_lab_walkingfast">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap>../pictures/WalkingFast_icon.png</pixmap>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="tact_pButton_sv_walkingfast">
+                 <property name="font">
+                  <font>
+                   <pointsize>8</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-style:outset;
+border-width:1px;
+border-color:black;
+border-radius:10px</string>
+                 </property>
+                 <property name="text">
+                  <string>Save</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>../pictures/save1_icon.png</normaloff>../pictures/save1_icon.png</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_15">
+               <item>
+                <widget class="QPushButton" name="tact_pButton_ld_walkinguneven">
+                 <property name="font">
+                  <font>
+                   <pointsize>8</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-style:outset;
+border-width:1px;
+border-color:black;
+border-radius:10px</string>
+                 </property>
+                 <property name="text">
+                  <string>Load</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>../pictures/load_Icon.png</normaloff>../pictures/load_Icon.png</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="tact_lab_walkinguneven">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap>../pictures/WalkingUneven_Icon.png</pixmap>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="tact_pButton_sv_walkinguneven">
+                 <property name="font">
+                  <font>
+                   <pointsize>8</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-style:outset;
+border-width:1px;
+border-color:black;
+border-radius:10px</string>
+                 </property>
+                 <property name="text">
+                  <string>Save</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>../pictures/save1_icon.png</normaloff>../pictures/save1_icon.png</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_16">
+               <item>
+                <widget class="QPushButton" name="tact_pButton_ld_walkingcircle">
+                 <property name="font">
+                  <font>
+                   <pointsize>8</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-style:outset;
+border-width:1px;
+border-color:black;
+border-radius:10px</string>
+                 </property>
+                 <property name="text">
+                  <string>Load</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>../pictures/load_Icon.png</normaloff>../pictures/load_Icon.png</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="tact_lab_walkingcircle">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap>../pictures/WalkingCircles_Icon.png</pixmap>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="tact_pButton_sv_walkingcircle">
+                 <property name="font">
+                  <font>
+                   <pointsize>8</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-style:outset;
+border-width:1px;
+border-color:black;
+border-radius:10px</string>
+                 </property>
+                 <property name="text">
+                  <string>Save</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>../pictures/save1_icon.png</normaloff>../pictures/save1_icon.png</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_17">
+               <item>
+                <widget class="QPushButton" name="tact_pButton_ld_ascendingramp">
+                 <property name="font">
+                  <font>
+                   <pointsize>8</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-style:outset;
+border-width:1px;
+border-color:black;
+border-radius:10px</string>
+                 </property>
+                 <property name="text">
+                  <string>Load</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>../pictures/load_Icon.png</normaloff>../pictures/load_Icon.png</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="tact_lab_ascendingramp">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap>../pictures/AscendingRamp_Icon.png</pixmap>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="tact_pButton_sv_ascendingramp">
+                 <property name="font">
+                  <font>
+                   <pointsize>8</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-style:outset;
+border-width:1px;
+border-color:black;
+border-radius:10px</string>
+                 </property>
+                 <property name="text">
+                  <string>Save</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>../pictures/save1_icon.png</normaloff>../pictures/save1_icon.png</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_18">
+               <item>
+                <widget class="QPushButton" name="tact_pButton_ld_descendingramp">
+                 <property name="font">
+                  <font>
+                   <pointsize>8</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-style:outset;
+border-width:1px;
+border-color:black;
+border-radius:10px</string>
+                 </property>
+                 <property name="text">
+                  <string>Load</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>../pictures/load_Icon.png</normaloff>../pictures/load_Icon.png</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="tact_lab_descendingramp">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap>../pictures/DescendingRamp_Icon.png</pixmap>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="tact_pButton_sv_descendingramp">
+                 <property name="font">
+                  <font>
+                   <pointsize>8</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-style:outset;
+border-width:1px;
+border-color:black;
+border-radius:10px</string>
+                 </property>
+                 <property name="text">
+                  <string>Save</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>../pictures/save1_icon.png</normaloff>../pictures/save1_icon.png</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_19">
+               <item>
+                <widget class="QPushButton" name="tact_pButton_ld_ascendingstair">
+                 <property name="font">
+                  <font>
+                   <pointsize>8</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-style:outset;
+border-width:1px;
+border-color:black;
+border-radius:10px</string>
+                 </property>
+                 <property name="text">
+                  <string>Load</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>../pictures/load_Icon.png</normaloff>../pictures/load_Icon.png</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="tact_lab_ascendingstair">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap>../pictures/AscendingStair_Icon.png</pixmap>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="tact_pButton_sv_ascendingstair">
+                 <property name="font">
+                  <font>
+                   <pointsize>8</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-style:outset;
+border-width:1px;
+border-color:black;
+border-radius:10px</string>
+                 </property>
+                 <property name="text">
+                  <string>Save</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>../pictures/save1_icon.png</normaloff>../pictures/save1_icon.png</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QVBoxLayout" name="verticalLayout_20">
+               <item>
+                <widget class="QPushButton" name="tact_pButton_ld_descendingstair">
+                 <property name="font">
+                  <font>
+                   <pointsize>8</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-style:outset;
+border-width:1px;
+border-color:black;
+border-radius:10px</string>
+                 </property>
+                 <property name="text">
+                  <string>Load</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>../pictures/load_Icon.png</normaloff>../pictures/load_Icon.png</iconset>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="tact_lab_descendingstair">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Ignored" vsizetype="Ignored">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string/>
+                 </property>
+                 <property name="pixmap">
+                  <pixmap>../pictures/DescendingStair_Icon.png</pixmap>
+                 </property>
+                 <property name="scaledContents">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QPushButton" name="tact_pButton_sv_descendingstair">
+                 <property name="font">
+                  <font>
+                   <pointsize>8</pointsize>
+                  </font>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border-style:outset;
+border-width:1px;
+border-color:black;
+border-radius:10px</string>
+                 </property>
+                 <property name="text">
+                  <string>Save</string>
+                 </property>
+                 <property name="icon">
+                  <iconset>
+                   <normaloff>../pictures/save1_icon.png</normaloff>../pictures/save1_icon.png</iconset>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_Automate">
+       <property name="minimumSize">
+        <size>
+         <width>1996</width>
+         <height>923</height>
+        </size>
+       </property>
+       <attribute name="title">
+        <string>Automate</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_6">
+        <item row="0" column="0">
+         <widget class="QLabel" name="tnew_lab_sitting_3">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap>../pictures/sitting_Icom.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLabel" name="tnew_lab_standing_3">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap>../pictures/Standing_Icon.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QLabel" name="tnew_lab_walkingSlow_3">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap>../pictures/WalkingSlow_Icon.png</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_Profile">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <attribute name="title">
+        <string>Profile</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="0" column="0">
+         <layout class="QVBoxLayout" name="verticalLayout_42">
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_12">
+            <item>
+             <layout class="QVBoxLayout" name="verticalLayout_11">
+              <item>
+               <widget class="QComboBox" name="tnew_cBox_Users">
+                <property name="font">
+                 <font>
+                  <pointsize>8</pointsize>
+                 </font>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>Select User</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_9">
+                <item>
+                 <widget class="QPushButton" name="tnew_pButton_read">
+                  <property name="font">
+                   <font>
+                    <pointsize>10</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border-style:outset;
+border-width:2px;
+border-color:black;
+border-radius:10px</string>
+                  </property>
+                  <property name="text">
+                   <string>Read</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="tnew_pButton_load">
+                  <property name="font">
+                   <font>
+                    <pointsize>10</pointsize>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">border-style:outset;
+border-width:2px;
+border-color:black;
+border-radius:10px</string>
+                  </property>
+                  <property name="text">
+                   <string>Load</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout_10">
+              <item>
+               <widget class="QLabel" name="tnew_label_name">
+                <property name="text">
+                 <string>Name</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QLineEdit" name="tnew_lEdit_name"/>
+              </item>
+             </layout>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QGridLayout" name="gridLayout">
+            <item row="0" column="1">
+             <widget class="QLabel" name="tnew_lab_sitting">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="pixmap">
+               <pixmap>../pictures/sitting_Icom.png</pixmap>
+              </property>
+              <property name="scaledContents">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="QLabel" name="tnew_lab_standing">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="pixmap">
+               <pixmap>../pictures/Standing_Icon.png</pixmap>
+              </property>
+              <property name="scaledContents">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="3">
+             <widget class="QLabel" name="tnew_lab_walkingSlow">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="pixmap">
+               <pixmap>../pictures/WalkingSlow_Icon.png</pixmap>
+              </property>
+              <property name="scaledContents">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="4">
+             <widget class="QLabel" name="tnew_lab_walkingFast">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="pixmap">
+               <pixmap>../pictures/WalkingFast_icon.png</pixmap>
+              </property>
+              <property name="scaledContents">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="5">
+             <widget class="QLabel" name="tnew_lab_walkingUneven">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="pixmap">
+               <pixmap>../pictures/WalkingUneven_Icon.png</pixmap>
+              </property>
+              <property name="scaledContents">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="6">
+             <widget class="QLabel" name="tnew_lab_walkingCircle">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="pixmap">
+               <pixmap>../pictures/WalkingCircles_Icon.png</pixmap>
+              </property>
+              <property name="scaledContents">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="7">
+             <widget class="QLabel" name="tnew_lab_ascendingRamp">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="pixmap">
+               <pixmap>../pictures/AscendingRamp_Icon.png</pixmap>
+              </property>
+              <property name="scaledContents">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="8">
+             <widget class="QLabel" name="tnew_lab_descendingRamp">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="pixmap">
+               <pixmap>../pictures/DescendingRamp_Icon.png</pixmap>
+              </property>
+              <property name="scaledContents">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="9">
+             <widget class="QLabel" name="tnew_lab_ascendingStair">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="pixmap">
+               <pixmap>../pictures/AscendingStair_Icon.png</pixmap>
+              </property>
+              <property name="scaledContents">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="10">
+             <widget class="QLabel" name="tnew_lab_descendingStair">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="pixmap">
+               <pixmap>../pictures/DescendingStair_Icon.png</pixmap>
+              </property>
+              <property name="scaledContents">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QLabel" name="label_43">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Anterior</string>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QComboBox" name="tnew_cBox_sitting_anterior">
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+                <stylestrategy>PreferDefault</stylestrategy>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="1" column="2">
+             <widget class="QComboBox" name="tnew_cBox_standing_anterior">
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+                <stylestrategy>PreferDefault</stylestrategy>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="1" column="3">
+             <widget class="QComboBox" name="tnew_cBox_walkingslow_anterior">
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+                <stylestrategy>PreferDefault</stylestrategy>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="1" column="4">
+             <widget class="QComboBox" name="tnew_cBox_walkingfast_anterior">
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+                <stylestrategy>PreferDefault</stylestrategy>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="1" column="5">
+             <widget class="QComboBox" name="tnew_cBox_walkinguneven_anterior">
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+                <stylestrategy>PreferDefault</stylestrategy>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="1" column="6">
+             <widget class="QComboBox" name="tnew_cBox_walkingcircle_anterior">
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+                <stylestrategy>PreferDefault</stylestrategy>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="1" column="7">
+             <widget class="QComboBox" name="tnew_cBox_ascendingramp_anterior">
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+                <stylestrategy>PreferDefault</stylestrategy>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="1" column="8">
+             <widget class="QComboBox" name="tnew_cBox_descendingramp_anterior">
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+                <stylestrategy>PreferDefault</stylestrategy>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="1" column="9">
+             <widget class="QComboBox" name="tnew_cBox_ascendingstair_anterior">
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+                <stylestrategy>PreferDefault</stylestrategy>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="1" column="10">
+             <widget class="QComboBox" name="tnew_cBox_descendingstair_anterior">
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+                <stylestrategy>PreferDefault</stylestrategy>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="2" column="0">
+             <widget class="QLabel" name="label_40">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Medial</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QComboBox" name="tnew_cBox_sitting_medial">
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+                <stylestrategy>PreferDefault</stylestrategy>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="2" column="2">
+             <widget class="QComboBox" name="tnew_cBox_standing_medial">
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+                <stylestrategy>PreferDefault</stylestrategy>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="2" column="3">
+             <widget class="QComboBox" name="tnew_cBox_walkingslow_medial">
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+                <stylestrategy>PreferDefault</stylestrategy>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="2" column="4">
+             <widget class="QComboBox" name="tnew_cBox_walkingfast_medial">
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+                <stylestrategy>PreferDefault</stylestrategy>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="2" column="5">
+             <widget class="QComboBox" name="tnew_cBox_walkinguneven_medial">
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+                <stylestrategy>PreferDefault</stylestrategy>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="2" column="6">
+             <widget class="QComboBox" name="tnew_cBox_walkingcircle_medial">
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+                <stylestrategy>PreferDefault</stylestrategy>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="2" column="7">
+             <widget class="QComboBox" name="tnew_cBox_ascendingramp_medial">
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+                <stylestrategy>PreferDefault</stylestrategy>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="2" column="8">
+             <widget class="QComboBox" name="tnew_cBox_descendingramp_medial">
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+                <stylestrategy>PreferDefault</stylestrategy>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="2" column="9">
+             <widget class="QComboBox" name="tnew_cBox_ascendingstair_medial">
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+                <stylestrategy>PreferDefault</stylestrategy>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="2" column="10">
+             <widget class="QComboBox" name="tnew_cBox_descendingstair_medial">
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+                <stylestrategy>PreferDefault</stylestrategy>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="3" column="0">
+             <widget class="QLabel" name="label_41">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Ramus</string>
+              </property>
+             </widget>
+            </item>
+            <item row="3" column="1">
+             <widget class="QComboBox" name="tnew_cBox_sitting_ramus">
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+                <stylestrategy>PreferDefault</stylestrategy>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="3" column="2">
+             <widget class="QComboBox" name="tnew_cBox_standing_ramus">
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+                <stylestrategy>PreferDefault</stylestrategy>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="3" column="3">
+             <widget class="QComboBox" name="tnew_cBox_walkingslow_ramus">
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+                <stylestrategy>PreferDefault</stylestrategy>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="3" column="4">
+             <widget class="QComboBox" name="tnew_cBox_walkingfast_ramus">
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+                <stylestrategy>PreferDefault</stylestrategy>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="3" column="5">
+             <widget class="QComboBox" name="tnew_cBox_walkinguneven_ramus">
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+                <stylestrategy>PreferDefault</stylestrategy>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="3" column="6">
+             <widget class="QComboBox" name="tnew_cBox_walkingcircle_ramus">
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+                <stylestrategy>PreferDefault</stylestrategy>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="3" column="7">
+             <widget class="QComboBox" name="tnew_cBox_ascendingramp_ramus">
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+                <stylestrategy>PreferDefault</stylestrategy>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="3" column="8">
+             <widget class="QComboBox" name="tnew_cBox_descendingramp_ramus">
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+                <stylestrategy>PreferDefault</stylestrategy>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="3" column="9">
+             <widget class="QComboBox" name="tnew_cBox_ascendingstair_ramus">
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+                <stylestrategy>PreferDefault</stylestrategy>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="3" column="10">
+             <widget class="QComboBox" name="tnew_cBox_descendingstair_ramus">
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+                <stylestrategy>PreferDefault</stylestrategy>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="4" column="0">
+             <widget class="QLabel" name="label_42">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Posterior</string>
+              </property>
+             </widget>
+            </item>
+            <item row="4" column="1">
+             <widget class="QComboBox" name="tnew_cBox_sitting_posterior">
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+                <stylestrategy>PreferDefault</stylestrategy>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="4" column="2">
+             <widget class="QComboBox" name="tnew_cBox_standing_posterior">
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+                <stylestrategy>PreferDefault</stylestrategy>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="4" column="3">
+             <widget class="QComboBox" name="tnew_cBox_walkingslow_posterior">
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+                <stylestrategy>PreferDefault</stylestrategy>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Stiff</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>Flexible</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="4" column="4">
+             <widget class="QComboBox" name="tnew_cBox_walkingfast_posterior">
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+                <stylestrategy>PreferDefault</stylestrategy>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="4" column="5">
+             <widget class="QComboBox" name="tnew_cBox_walkinguneven_posterior">
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+                <stylestrategy>PreferDefault</stylestrategy>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="4" column="6">
+             <widget class="QComboBox" name="tnew_cBox_walkingcircle_posterior">
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+                <stylestrategy>PreferDefault</stylestrategy>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="4" column="7">
+             <widget class="QComboBox" name="tnew_cBox_ascendingramp_posterior">
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+                <stylestrategy>PreferDefault</stylestrategy>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="4" column="8">
+             <widget class="QComboBox" name="tnew_cBox_descendingramp_posterior">
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+                <stylestrategy>PreferDefault</stylestrategy>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="4" column="9">
+             <widget class="QComboBox" name="tnew_cBox_ascendingstair_posterior">
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+                <stylestrategy>PreferDefault</stylestrategy>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item row="4" column="10">
+             <widget class="QComboBox" name="tnew_cBox_descendingstair_posterior">
+              <property name="font">
+               <font>
+                <pointsize>8</pointsize>
+                <stylestrategy>PreferDefault</stylestrategy>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true"/>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_7">
+            <item>
+             <widget class="QLabel" name="tnew_label_mode">
+              <property name="font">
+               <font>
+                <pointsize>9</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Operational Mode</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="tnew_cBox_mode">
+              <item>
+               <property name="text">
+                <string>N/A</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>128</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_8">
+            <item>
+             <widget class="QPushButton" name="tnew_pButton_save">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">border-style:outset;
+border-width:2px;
+border-color:black;
+border-radius:10px
+</string>
+              </property>
+              <property name="text">
+               <string>Save</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>128</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>2046</width>
+     <height>47</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action_Connect"/>
+   <addaction name="separator"/>
+  </widget>
+  <action name="action_Connect">
+   <property name="icon">
+    <iconset>
+     <normaloff>../pictures/Connect_Icon.png</normaloff>../pictures/Connect_Icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Connect</string>
+   </property>
+  </action>
+ </widget>
+ <tabstops>
+  <tabstop>tnew_cBox_Users</tabstop>
+  <tabstop>tnew_pButton_read</tabstop>
+  <tabstop>tnew_pButton_load</tabstop>
+  <tabstop>tnew_lEdit_name</tabstop>
+  <tabstop>tnew_cBox_sitting_anterior</tabstop>
+  <tabstop>tnew_cBox_sitting_medial</tabstop>
+  <tabstop>tnew_cBox_sitting_ramus</tabstop>
+  <tabstop>tnew_cBox_sitting_posterior</tabstop>
+  <tabstop>tnew_cBox_standing_anterior</tabstop>
+  <tabstop>tnew_cBox_standing_medial</tabstop>
+  <tabstop>tnew_cBox_standing_ramus</tabstop>
+  <tabstop>tnew_cBox_standing_posterior</tabstop>
+  <tabstop>tnew_cBox_walkingslow_anterior</tabstop>
+  <tabstop>tnew_cBox_walkingslow_medial</tabstop>
+  <tabstop>tnew_cBox_walkingslow_ramus</tabstop>
+  <tabstop>tnew_cBox_walkingslow_posterior</tabstop>
+  <tabstop>tnew_cBox_walkingfast_anterior</tabstop>
+  <tabstop>tnew_cBox_walkingfast_medial</tabstop>
+  <tabstop>tnew_cBox_walkingfast_ramus</tabstop>
+  <tabstop>tnew_cBox_walkingfast_posterior</tabstop>
+  <tabstop>tnew_cBox_walkinguneven_anterior</tabstop>
+  <tabstop>tnew_cBox_walkinguneven_medial</tabstop>
+  <tabstop>tnew_cBox_walkinguneven_ramus</tabstop>
+  <tabstop>tnew_cBox_walkinguneven_posterior</tabstop>
+  <tabstop>tnew_cBox_walkingcircle_anterior</tabstop>
+  <tabstop>tnew_cBox_walkingcircle_medial</tabstop>
+  <tabstop>tnew_cBox_walkingcircle_ramus</tabstop>
+  <tabstop>tnew_cBox_walkingcircle_posterior</tabstop>
+  <tabstop>tnew_cBox_ascendingramp_anterior</tabstop>
+  <tabstop>tnew_cBox_ascendingramp_medial</tabstop>
+  <tabstop>tnew_cBox_ascendingramp_ramus</tabstop>
+  <tabstop>tnew_cBox_ascendingramp_posterior</tabstop>
+  <tabstop>tnew_cBox_descendingramp_anterior</tabstop>
+  <tabstop>tnew_cBox_descendingramp_medial</tabstop>
+  <tabstop>tnew_cBox_descendingramp_ramus</tabstop>
+  <tabstop>tnew_cBox_descendingramp_posterior</tabstop>
+  <tabstop>tnew_cBox_ascendingstair_anterior</tabstop>
+  <tabstop>tnew_cBox_ascendingstair_medial</tabstop>
+  <tabstop>tnew_cBox_ascendingstair_ramus</tabstop>
+  <tabstop>tnew_cBox_ascendingstair_posterior</tabstop>
+  <tabstop>tnew_cBox_descendingstair_anterior</tabstop>
+  <tabstop>tnew_cBox_descendingstair_medial</tabstop>
+  <tabstop>tnew_cBox_descendingstair_ramus</tabstop>
+  <tabstop>tnew_cBox_descendingstair_posterior</tabstop>
+  <tabstop>tnew_cBox_mode</tabstop>
+  <tabstop>tnew_pButton_save</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

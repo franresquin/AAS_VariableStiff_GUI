@@ -1,0 +1,96 @@
+NAME,MODE,CASE,ANTERIOR,MEDIAL,RAMUS,POSTERIOR
+FranciscoResquin,Mode1,sitting,flexible,flexible,flexible,flexible
+FranciscoResquin,Mode1,standing,flexible,stiff,stiff,stiff
+FranciscoResquin,Mode1,walkingslow,stiff,flexible,flexible,stiff
+Test User,Mode2,sitting,stiff,flexible,flexible,flexible
+Paraguayo mbarete,Mode2,sitting,flexible,flexible,flexible,flexible
+Antonella Machuca,Mode1,sitting,stiff,stiff,stiff,stiff
+Antonella Machuca,Mode1,standing,stiff,stiff,stiff,stiff
+Antonella Machuca,Mode1,walkingslow,stiff,flexible,flexible,stiff
+Antonella Machuca,Mode1,walkingfast,stiff,stiff,stiff,stiff
+Antonella Machuca,Mode1,walkinguneven,stiff,stiff,stiff,stiff
+Antonella Machuca,Mode1,walkingcircle,stiff,stiff,stiff,stiff
+Antonella Machuca,Mode1,ascendingramp,stiff,stiff,stiff,stiff
+Antonella Machuca,Mode1,descendingramp,stiff,stiff,stiff,stiff
+Antonella Machuca,Mode1,ascendingstair,stiff,stiff,stiff,stiff
+Antonella Machuca,Mode1,descendingstair,flexible,flexible,flexible,flexible
+Paula Resquin,Mode3,sitting,flexible,stiff,stiff,stiff
+Paula Resquin,Mode3,standing,stiff,stiff,stiff,stiff
+Paula Resquin,Mode3,walkingslow,stiff,stiff,stiff,stiff
+Paula Resquin,Mode3,walkingfast,stiff,stiff,stiff,stiff
+Paula Resquin,Mode3,walkinguneven,stiff,stiff,stiff,stiff
+Paula Resquin,Mode3,walkingcircle,stiff,stiff,stiff,stiff
+Paula Resquin,Mode3,ascendingramp,stiff,stiff,stiff,stiff
+Paula Resquin,Mode3,descendingramp,stiff,stiff,stiff,stiff
+Paula Resquin,Mode3,ascendingstair,stiff,stiff,stiff,stiff
+Paula Resquin,Mode3,descendingstair,stiff,stiff,stiff,stiff
+Test User,Mode2,standing,stiff,stiff,stiff,stiff
+Test User,Mode2,walkingslow,flexible,flexible,flexible,flexible
+Test User,Mode2,walkingfast,stiff,stiff,stiff,stiff
+Test User,Mode2,walkinguneven,stiff,stiff,stiff,stiff
+Test User,Mode2,walkingcircle,stiff,stiff,stiff,stiff
+Test User,Mode2,ascendingramp,stiff,stiff,stiff,stiff
+Test User,Mode2,descendingramp,stiff,stiff,stiff,stiff
+Test User,Mode2,ascendingstair,stiff,stiff,stiff,stiff
+Test User,Mode2,descendingstair,stiff,stiff,stiff,stiff
+FranciscoResquin,Mode2,sitting,flexible,flexible,flexible,flexible
+FranciscoResquin,Mode2,standing,stiff,stiff,stiff,stiff
+FranciscoResquin,Mode2,walkingslow,flexible,stiff,flexible,stiff
+FranciscoResquin,Mode2,walkingfast,stiff,stiff,stiff,stiff
+FranciscoResquin,Mode2,walkinguneven,stiff,stiff,stiff,stiff
+FranciscoResquin,Mode2,walkingcircle,stiff,stiff,stiff,stiff
+FranciscoResquin,Mode2,ascendingramp,stiff,stiff,stiff,stiff
+FranciscoResquin,Mode2,descendingramp,stiff,stiff,stiff,stiff
+FranciscoResquin,Mode2,ascendingstair,stiff,stiff,stiff,stiff
+FranciscoResquin,Mode2,descendingstair,flexible,flexible,flexible,flexible
+Prof Max Nader,Mode2,sitting,flexible,flexible,flexible,flexible
+Prof Max Nader,Mode2,standing,stiff,stiff,stiff,stiff
+Prof Max Nader,Mode2,walkingslow,flexible,flexible,flexible,flexible
+Prof Max Nader,Mode2,walkingfast,stiff,stiff,stiff,stiff
+Prof Max Nader,Mode2,walkinguneven,stiff,stiff,stiff,stiff
+Prof Max Nader,Mode2,walkingcircle,stiff,stiff,stiff,stiff
+Prof Max Nader,Mode2,ascendingramp,stiff,stiff,stiff,stiff
+Prof Max Nader,Mode2,descendingramp,stiff,stiff,stiff,stiff
+Prof Max Nader,Mode2,ascendingstair,stiff,stiff,stiff,stiff
+Prof Max Nader,Mode2,descendingstair,flexible,flexible,flexible,flexible
+Paula Resquin,Mode1,sitting,flexible,flexible,flexible,flexible
+Paula Resquin,Mode1,standing,stiff,stiff,stiff,stiff
+Paula Resquin,Mode1,walkingslow,stiff,stiff,stiff,stiff
+Paula Resquin,Mode1,walkingfast,stiff,stiff,stiff,stiff
+Paula Resquin,Mode1,walkinguneven,stiff,stiff,stiff,stiff
+Paula Resquin,Mode1,walkingcircle,stiff,stiff,stiff,stiff
+Paula Resquin,Mode1,ascendingramp,stiff,stiff,stiff,stiff
+Paula Resquin,Mode1,descendingramp,stiff,stiff,stiff,stiff
+Paula Resquin,Mode1,ascendingstair,stiff,stiff,stiff,stiff
+Paula Resquin,Mode1,descendingstair,flexible,flexible,flexible,flexible
+Prof Max Nader,Mode1,sitting,flexible,flexible,flexible,flexible
+Prof Max Nader,Mode1,standing,stiff,stiff,stiff,stiff
+Prof Max Nader,Mode1,walkingslow,flexible,stiff,flexible,flexible
+Prof Max Nader,Mode1,walkingfast,stiff,stiff,stiff,stiff
+Prof Max Nader,Mode1,walkinguneven,flexible,flexible,flexible,flexible
+Prof Max Nader,Mode1,walkingcircle,stiff,stiff,stiff,stiff
+Prof Max Nader,Mode1,ascendingramp,stiff,stiff,stiff,stiff
+Prof Max Nader,Mode1,descendingramp,stiff,stiff,stiff,stiff
+Prof Max Nader,Mode1,ascendingstair,stiff,stiff,stiff,stiff
+Prof Max Nader,Mode1,descendingstair,stiff,stiff,stiff,stiff
+FranciscoResquin,Mode1,walkingfast,stiff,stiff,stiff,stiff
+FranciscoResquin,Mode1,walkinguneven,stiff,stiff,stiff,stiff
+FranciscoResquin,Mode1,walkingcircle,stiff,flexible,stiff,flexible
+FranciscoResquin,Mode1,ascendingramp,stiff,stiff,stiff,stiff
+FranciscoResquin,Mode1,descendingramp,stiff,stiff,stiff,stiff
+FranciscoResquin,Mode1,ascendingstair,stiff,stiff,stiff,stiff
+FranciscoResquin,Mode1,descendingstair,stiff,stiff,stiff,stiff
+Test User,Mode1,sitting,stiff,stiff,stiff,stiff
+Test User,Mode1,standing,stiff,stiff,stiff,stiff
+Test User,Mode1,walkingslow,stiff,stiff,stiff,stiff
+Test User,Mode1,walkingfast,stiff,stiff,stiff,stiff
+Test User,Mode1,walkinguneven,stiff,stiff,stiff,stiff
+Test User,Mode1,walkingcircle,stiff,stiff,stiff,stiff
+Test User,Mode1,ascendingramp,stiff,stiff,stiff,stiff
+Test User,Mode1,descendingramp,stiff,stiff,stiff,stiff
+Test User,Mode1,ascendingstair,stiff,stiff,stiff,stiff
+Test User,Mode1,descendingstair,stiff,stiff,stiff,stiff
+Paraguayo mbarete,Mode2,standing,stiff,stiff,stiff,stiff
+Paraguayo mbarete,Mode2,walkingslow,stiff,stiff,stiff,flexible
+Paraguayo mbarete,Mode2,walkingfast,stiff,stiff,flexible,stiff
+Paraguayo mbarete,Mode2,descendingstair,stiff,flexible,flexible,stiff
